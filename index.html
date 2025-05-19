@@ -81,28 +81,27 @@
           </h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              Yijie Deng<sup>*,</sup><sup style="color:#ffac33;">2</sup><sup>,</sup><sup style="color:#6fbf73;">1</sup></a>
+              Yijie Deng<sup>†,</sup><sup style="color:#6fbf73;">1,</sup><sup style="color:#ffac33;">2</sup></a>
               ,
             </span>
             <span class="author-block">
-              He Zhu<sup style="color:#ed4b82;">3</sup><sup>,</sup><sup style="color:#6fbf73;">1</sup></a>
+              He Zhu<sup>†,</sup><sup style="color:#6fbf73;">1,</sup><sup style="color:#ffac33;">2</sup></a>
               ,
             </span>
             <span class="author-block">
-              Wen Wang<sup style="color:#ed4b82;">3</sup><sup>,</sup><sup style="color:#6fbf73;">1</sup></a>
+              Wen Wang</sup><sup style="color:#6fbf73;">1,</sup><sup style="color:#ffac33;">2</sup></a>
               ,
             </span>
             <span class="author-block">
-              Minxin Chen<sup style="color:#ed4b82;">3</sup><sup>,</sup><sup style="color:#6fbf73;">1</sup></a>
+              Minxin Chen</sup><sup style="color:#6fbf73;">1,</sup><sup style="color:#ffac33;">2</sup></a>
               ,
             </span>
             <span class="author-block">
-              Junyou Su<sup style="color:#ed4b82;">3</sup><sup>,</sup><sup style="color:#6fbf73;">1</sup></a>
+              Junyou Su</sup><sup style="color:#6fbf73;">1,</sup><sup style="color:#ffac33;">2</sup></a>
               ,
             </span>
             <span class="author-block">
-              Wenjia Zhang<sup>†,</sup><sup style="color:#6fbf73;">1</sup></a>,
-            </span>
+              Wenjia Zhang<sup>*,</sup><sup style="color:#6fbf73;">1,</sup><sup style="color:#ed4b82;">3</sup></a>
 <!--             <span class="author-block">Quanfeng Lu<sup style="color:#6fbf73;">1</sup><sup>,</sup><sup style="color:#ffac33;">2</sup>,</span>
             <span class="author-block">Hao Tian<sup style="color:#007bff;">4</sup>,</span>
             <span class="author-block">Jiaqi Liao<sup style="color:#6fbf73;">1</sup>,</span>
@@ -126,7 +125,9 @@
           <br>
           
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup style="color:#6fbf73;">1</sup>Behavioral and Spatial AI Lab, Peking University & Tongji University</span>
+            <span class="author-block"><sup style="color:#6fbf73;">1</sup>Behavioral and Spatial AI Lab, Tongji University</span>
+            <span class="author-block"><sup style="color:#ffac33;">2</sup>Behavioral and Spatial AI Lab, Peking University</span>
+            <span class="author-block"><sup style="color:#ed4b82;">3</sup>College of Architecture and Urban Planning, Tongji University</span>
 <!--             <span class="author-block"><sup style="color:#ffac33;">2</sup>Shanghai Jiao Tong University,</span></br>
             <span class="author-block"><sup style="color:#ed4b82;">3</sup>The University of Hong Kong,</span>
             <span class="author-block"><sup style="color:#007bff;">4</sup>SenseTime Research,</span>
@@ -136,7 +137,6 @@
           <br>
           <div class="is-size-5 publication-authors">
             <span class="author-block">†Corresponding Author:</span>
-            <span class="author-block"><a href="yijiedeng@stu.pku.edu.cn">yijiedeng@stu.pku.edu.cn</a>,</span>
             <span class="author-block"><a href="mailto:zhangkaipeng@pjlab.org.cn">wenjiazhang@pku.edu.cn</a></span>
           </div>
           
@@ -203,7 +203,7 @@
         <h2 class="title is-3">🔔News</h2>
         <div class="content has-text-justified">
           <p>
-            <b>🔥[2025-05-19] We released the <a href="https://arxiv.org">technical report</a>.</b>
+            <b>🔥[2025-05-20] The arxiv article and dataset along with the code will be launched soon.</a></b>
           </p>
       </div>      
         <div class="lang-en">
@@ -294,6 +294,14 @@
           <p>
             <strong>5. Assessment Procedure:</strong> For validation, we convened a panel of expert urban planners from academia and practice to workshop core knowledge domains and review assessment items. Each question was paired with detailed scoring rubrics specifying evaluation criteria and acceptable response elements. We employed a dual human-machine scoring system, with algorithmic metrics calibrated against human-annotated benchmarks to ensure reliability.
           </p>
+          <img src="./pictures/planbench_text_show.png" alt="framework" class="center">
+          <figcaption>
+            <p style="text-align: center;">
+              <font color="061E61">
+                  <b>Figure 1:</b> PlanBench-Text Architecture.
+              </font>
+            </p>
+          </figcaption>
         </div>
         </div>
         <div class="lang-zh" style="display: none;">
@@ -342,111 +350,82 @@
             <p> 
               The benchmark items span key categories of urban planning knowledge, including land use planning, transportation planning, urban design, housing and community development, environmental planning, and infrastructure planning. Each TextBench item consists of a query, context information (when applicable), and evaluation criteria. The queries assess different cognitive levels based on Bloom’s revised taxonomy, with balanced distribution across Remembering, Understanding,Applying, Analyzing, Evaluating, and Creating levels.<br>
             </p>
-          <div class="columns is-centered">
-            <div class="column is-half">
-              <figure class="image is-4by3">
-                <img src="./pictures/image.png" alt="knowledge classification" style="width: 100%; margin-left: auto; margin-right: auto;">
-              </figure>
-            </div>
-            <div class="column is-half">
-              <figure class="image is-4by3">
-                <img src="./pictures/image_short.png" alt="knowledge classification" style="width: 100%; margin-left: auto; margin-right: auto;">
-              </figure>
-            </div>
+          <!-- <div class="columns has-text-justified">
+              <img src="./pictures/example.png" alt="framework" class="center">
+                  <br>
+              <figcaption>
+                <p style="text-align: center;">
+                  <font color="061E61">
+                      <b>Figure 2:</b> Task Flow Diagram.
+                  </font>
+                </p>
+              </figcaption>
           </div>
-
+          <div class="columns has-text-justified">
+              <img src="./pictures/image_short.png" alt="framework" class="center">
+                  <br>
+              <figcaption>
+                <p style="text-align: center;">
+                  <font color="061E61">
+                      <b>Figure 3:</b> Subject System Diagram.
+                  </font>
+                </p>
+              </figcaption>
+            </div>
+            <div class="columns has-text-justified">
+              <img src="./pictures/world.png" alt="framework" class="center">
+              <figcaption>
+                <p style="text-align: center;">
+                  <font color="061E61">
+                      <b>Figure 4:</b> National Distribution Map Based on Subject Syllabi.
+                  </font>
+                </p>
+              </figcaption>
+            </div> -->
           </div>
-        
-          <!-- <table class="table-container", style="width: 80%; margin-left: auto; margin-right: auto;"">
-          <tr style="background-color: rgba(122, 122, 122, 0.15);"">
-              <td class="js-sort-number"><strong>Country/Region</strong></td>
-              <td class="js-sort-string"><strong>Certification Exam</strong></td>
-              <td class="js-sort-string"><strong>Core Content Areas</strong></td>
-              <td class="js-sort-string"><strong>Official Source</strong></td>
-          </tr>
-          <tr style="background-color: rgba(255, 208, 80, 0.15);">
-            <td style="text-align: center;"><strong>United States</strong></td>
-            <td>AICP Certification Exam</td>
-            <td>Fundamental Planning Knowledge<br>Communication and Interaction<br>Plan and Policy Development<br>Plan Implementation<br>Administration and Management<br>Leadership<br>Areas of Practice</td>
-            <td>American Planning Association (APA)</td>
-          </tr>
-          <tr>
-              <td>China</td>
-              <td>Registered Urban Planner Exam</td>
-              <td>Urban and Rural Planning Principles<br>Urban and Rural Planning Related Knowledge<br>Urban and Rural Planning Management and Regulations<br>Urban and Rural Planning Practice</td>
-              <td>Law of the People’s Republic of China on Urban and Rural Planning</td>
-          </tr>
-          <tr>
-              <td>United Kingdom</td>
-              <td>RTPI Assessment of Professional Competence (APC)</td>
-              <td>Professionalism and Ethics<br>Planning Practice and Legislation<br>Spatial Planning and Sustainable Development<br>Communication and Engagement</td>
-              <td>Royal Town Planning Institute (RTPI)</td>
-          </tr>
-          <tr>
-              <td>Canada</td>
-              <td>Professional Examination</td>
-              <td>Public Interest<br>Professional Responsibility<br>Ethics</td>
-              <td>Professional Standards Board (PSB)</td>
-          </tr>
-          <tr>
-              <td>Australia</td>
-              <td>Registered Planner Assessment</td>
-              <td>Developing and Applying Technical Knowledge<br>Professionalism and Integrity<br>Understanding, Interpreting and Using Spatial Thinking<br>Communicating and Engaging with Stakeholders<br>Understanding and Working with Planning Frameworks<br>Using a Creative and Integrative Approach</td>
-              <td>Planning Institute of Australia (PIA)</td>
-          </tr>
-          <tr>
-              <td>Singapore</td>
-              <td>Urban Planning Foundation Course</td>
-              <td>Urban Evolution and Planning<br>Planning Theories<br>Participatory Planning<br>Strategic and Local Planning<br>Development Control<br>Urban Design and Conservation<br>Sustainability and Liveability</td>
-              <td>Singapore Institute of Planners (SIP)</td>
-          </tr>
-          <tr>
-              <td>India</td>
-              <td>Town Planner Examination</td>
-              <td>Urban and Regional Planning Principles<br>Planning Techniques and Methods<br>Development Control Regulations<br>Urban Governance and Legislation</td>
-              <td>Town and Country Planning Organisation (TCPO)</td>
-          </tr>
-          <tr>
-              <td>Germany</td>
-              <td>Stadtplaner Certification</td>
-              <td>Urban Planning Law<br>Spatial Planning and Development<br>Environmental Planning<br>Urban Design and Architecture</td>
-              <td>Bundesarchitektenkammer (Federal Chamber of German Architects)</td>
-          </tr>
-          <tr>
-              <td>France</td>
-              <td>Urbaniste Qualification</td>
-              <td>Urban Planning and Development<br>Environmental and Sustainable Planning<br>Urban Policy and Governance<br>Planning Law and Regulations</td>
-              <td>Ministère de la Transition Écologique</td>
-          </tr>
-          <tr>
-              <td>Japan</td>
-              <td>Urban Planner Examination</td>
-              <td>Urban Planning Law<br>Land Use Planning<br>Urban Development and Design<br>Environmental and Disaster Prevention Planning</td>
-              <td>Ministry of Land, Infrastructure, Transport and Tourism (MLIT)</td>
-          </tr>
-        </table> -->
         </div>
         </div>
         <div class="lang-zh" style="display: none;">
           <h2 class="title is-3">数据集</h2>
-          <div class="content">
             <div class="content has-text-justified">
               <p>
                 benchmark题目覆盖了城市规划知识的关键类别，包括土地利用规划、交通规划、城市设计、住房和社区发展、环境规划和基础设施规划。每个TextBench项目由一个查询、上下文信息（如适用）和评估标准组成。查询根据布鲁姆修订版分类法评估不同的认知水平，涵盖了记忆、理解、应用、分析、评估和创造等多个层次。
               </p>
-            <div class="columns is-centered">
-              <div class="column is-half">
-                <figure class="image is-4by3">
-                  <img src="./pictures/image.png" alt="knowledge classification" style="width: 100%; margin-left: auto; margin-right: auto;">
-                </figure>
-              </div>
-              <div class="column is-half">
-                <figure class="image is-4by3">
-                  <img src="./pictures/image_short.png" alt="knowledge classification" style="width: 100%; margin-left: auto; margin-right: auto;">
-                </figure>
-              </div>
+            <!-- <div class="columns has-text-justified">
+              <img class="columns is-centered has-text-centered" src="./pictures/example.png" alt="Teaser" width="95%"
+                  style="margin:0 auto">
+                  <br>
+              <figcaption>
+                <p style="text-align: center;">
+                  <font color="061E61">
+                      <b>Figure 2:</b> Task Flow Diagram.
+                  </font>
+                </p>
+              </figcaption>
             </div>
+            <div class="columns has-text-justified">
+              <img class="columns is-centered has-text-centered" src="./pictures/image_short.png" alt="knowledge classification" width="95%"
+                  style="margin:0 auto">
+                  <br>
+              <figcaption>
+                <p style="text-align: center;">
+                  <font color="061E61">
+                      <b>Figure 3:</b> Subject System Diagram.
+                  </font>
+                </p>
+              </figcaption>
             </div>
+            <div class="columns has-text-justified">
+              <img class="columns is-centered has-text-centered" src="./pictures/world.png" alt="knowledge classification" width="95%"
+                  style="margin:0 auto">
+              <figcaption>
+                <p style="text-align: center;">
+                  <font color="061E61">
+                      <b>Figure 4:</b> National Distribution Map Based on Subject Syllabi.
+                  </font>
+                </p>
+              </figcaption>
+            </div> -->
           </div>
         </div>
       </div>
@@ -505,201 +484,201 @@
 
         <tr style="background-color: rgba(255, 208, 80, 0.15);">
           <td style="text-align: left;"><strong>DeepSeek-R1-Distill-Llama-8B</strong></td>
-          <td>28.4</td>
           <td>93.8</td>
           <td>64.2</td>
-          <td>78.8</td>
           <td>75.3</td>
+          <td>78.8</td>
+          <td>28.4</td>
           <td>68.1</td>
         </tr>
         <tr style="background-color: rgba(255, 208, 80, 0.15);">
           <td style="text-align: left;"><strong>DeepSeek-R1-Distill-Qwen-7B</strong></td>
-          <td>23.5</td>
           <td>96.3</td>
           <td>69.1</td>
-          <td>73.4</td>
           <td>77.8</td>
+          <td>73.4</td>
+          <td>23.5</td>
           <td>68.0</td>
         </tr>
         <tr style="background-color: rgba(249, 242, 248, 1);">
-          <td style="text-align: left;"><strong>Llama-3.1-Tulu-3-8B</strong></td>
-          <td>16.0</td>
-          <td>60.5</td>
-          <td>56.8</td>
-          <td>80.8</td>
-          <td>30.9</td>
-          <td>49.0</td>
-        </tr>
-        <tr style="background-color: rgba(249, 242, 248, 1);">
           <td style="text-align: left;"><strong>Meta-Llama-3-8B-Instruct</strong></td>
-          <td>48.1</td>
           <td>95.1</td>
           <td>58.0</td>
-          <td>78.8</td>
           <td>72.8</td>
+          <td>78.8</td>
+          <td>48.1</td>
           <td>70.6</td>
+        </tr>
+        <tr style="background-color: rgba(249, 242, 248, 1);">
+          <td style="text-align: left;"><strong>Llama-3.1-Tulu-3-8B</strong></td>
+          <td>60.5</td>
+          <td>56.8</td>
+          <td>30.9</td>
+          <td>80.8</td>
+          <td>16.0</td>
+          <td>49.0</td>
+        </tr>
+        <tr style="background-color: rgb(229, 237, 255);">
+          <td style="text-align: left;"><strong>Qwen3-32B</strong></td>
+          <td>97.5</td>
+          <td>86.4</td>
+          <td>95.1</td>
+          <td>86.1</td>
+          <td>39.5</td>
+          <td>80.9</td>
+        </tr>
+        <tr style="background-color: rgb(229, 237, 255);">
+          <td style="text-align: left;"><strong>Qwen3-14B</strong></td>
+          <td>97.5</td>
+          <td>77.8</td>
+          <td>92.6</td>
+          <td>86.8</td>
+          <td>48.1</td>
+          <td>80.6</td>
+        </tr>
+        <tr style="background-color: rgb(229, 237, 255);">
+          <td style="text-align: left;"><strong>QwQ-32B</strong></td>
+          <td>95.1</td>
+          <td>85.2</td>
+          <td>91.4</td>
+          <td>91.9</td>
+          <td>38.3</td>
+          <td>80.4</td>
+        </tr>
+        <tr style="background-color: rgb(229, 237, 255);">
+          <td style="text-align: left;"><strong>Qwen3-8B</strong></td>
+          <td>93.8</td>
+          <td>80.2</td>
+          <td>90.1</td>
+          <td>90.4</td>
+          <td>45.7</td>
+          <td>80.0</td>
+        </tr>
+        <tr style="background-color: rgb(229, 237, 255);">
+          <td style="text-align: left;"><strong>Qwen3-4B</strong></td>
+          <td>95.1</td>
+          <td>72.8</td>
+          <td>90.1</td>
+          <td>89.3</td>
+          <td>46.9</td>
+          <td>78.8</td>
+        </tr>
+        <tr style="background-color: rgb(229, 237, 255);">
+          <td style="text-align: left;"><strong>Qwen3-30B-A3B</strong></td>
+          <td>97.5</td>
+          <td>79.0</td>
+          <td>88.9</td>
+          <td>89.5</td>
+          <td>37.0</td>
+          <td>78.4</td>
+        </tr>
+        <tr style="background-color: rgb(229, 237, 255);">
+          <td style="text-align: left;"><strong>Qwen3-1.7B</strong></td>
+          <td>95.1</td>
+          <td>79.0</td>
+          <td>76.5</td>
+          <td>85.1</td>
+          <td>34.6</td>
+          <td>74.1</td>
         </tr>
         <tr style="background-color: rgb(229, 237, 255);">
           <td style="text-align: left;"><strong>Qwen2-5-3B-Instruct</strong></td>
-          <td>29.6</td>
           <td>98.8</td>
           <td>66.7</td>
-          <td>64.0</td>
           <td>92.6</td>
+          <td>64.0</td>
+          <td>29.6</td>
           <td>70.3</td>
         </tr>
         <tr style="background-color: rgb(229, 237, 255);">
           <td style="text-align: left;"><strong>Qwen2-5-7B-Instruct</strong></td>
-          <td>30.9</td>
           <td>98.8</td>
           <td>70.4</td>
-          <td>65.9</td>
           <td>81.5</td>
+          <td>65.9</td>
+          <td>30.9</td>
           <td>69.5</td>
         </tr>
         <tr style="background-color: rgb(229, 237, 255);">
           <td style="text-align: left;"><strong>Qwen2-VL-7B-Instruct</strong></td>
-          <td>39.5</td>
           <td>93.8</td>
           <td>65.4</td>
-          <td>65.7</td>
           <td>76.5</td>
+          <td>65.7</td>
+          <td>39.5</td>
           <td>68.2</td>
         </tr>
         <tr style="background-color: rgb(229, 237, 255);">
-          <td style="text-align: left;"><strong>Qwen2.5-0.5B-Instruct</strong></td>
-          <td>14.8</td>
-          <td>65.4</td>
-          <td>21.0</td>
-          <td>69.4</td>
-          <td>25.9</td>
-          <td>39.3</td>
-        </tr>
-        <tr style="background-color: rgb(229, 237, 255);">
           <td style="text-align: left;"><strong>Qwen3-0.6B</strong></td>
-          <td>12.3</td>
           <td>90.1</td>
           <td>55.6</td>
-          <td>74.8</td>
           <td>46.9</td>
+          <td>74.8</td>
+          <td>12.3</td>
           <td>55.9</td>
         </tr>
         <tr style="background-color: rgb(229, 237, 255);">
-          <td style="text-align: left;"><strong>Qwen3-1.7B</strong></td>
-          <td>34.6</td>
-          <td>95.1</td>
-          <td>79.0</td>
-          <td>85.1</td>
-          <td>76.5</td>
-          <td>74.1</td>
-        </tr>
-        <tr style="background-color: rgb(229, 237, 255);">
-          <td style="text-align: left;"><strong>Qwen3-4B</strong></td>
-          <td>46.9</td>
-          <td>95.1</td>
-          <td>72.8</td>
-          <td>89.3</td>
-          <td>90.1</td>
-          <td>78.8</td>
-        </tr>
-        <tr style="background-color: rgb(229, 237, 255);">
-          <td style="text-align: left;"><strong>Qwen3-8B</strong></td>
-          <td>45.7</td>
-          <td>93.8</td>
-          <td>80.2</td>
-          <td>90.4</td>
-          <td>90.1</td>
-          <td>80.0</td>
-        </tr>
-        <tr style="background-color: rgb(229, 237, 255);">
-          <td style="text-align: left;"><strong>Qwen3-14B</strong></td>
-          <td>48.1</td>
-          <td>97.5</td>
-          <td>77.8</td>
-          <td>86.8</td>
-          <td>92.6</td>
-          <td>80.6</td>
-        </tr>
-        <tr style="background-color: rgb(229, 237, 255);">
-          <td style="text-align: left;"><strong>Qwen3-30B-A3B</strong></td>
-          <td>37.0</td>
-          <td>97.5</td>
-          <td>79.0</td>
-          <td>89.5</td>
-          <td>88.9</td>
-          <td>78.4</td>
-        </tr>
-        <tr style="background-color: rgb(229, 237, 255);">
-          <td style="text-align: left;"><strong>Qwen3-32B</strong></td>
-          <td>39.5</td>
-          <td>97.5</td>
-          <td>86.4</td>
-          <td>86.1</td>
-          <td>95.1</td>
-          <td>80.9</td>
-        </tr>
-        <tr style="background-color: rgb(229, 237, 255);">
-          <td style="text-align: left;"><strong>QwQ-32B</strong></td>
-          <td>38.3</td>
-          <td>95.1</td>
-          <td>85.2</td>
-          <td>91.9</td>
-          <td>91.4</td>
-          <td>80.4</td>
-        </tr>
-        <tr style="background-color: rgba(117, 209, 215, 0.1);">
-          <td style="text-align: left;"><strong>Yi-6B-Chat</strong></td>
-          <td>26.2</td>
-          <td>93.8</td>
-          <td>48.1</td>
-          <td>85.6</td>
-          <td>75.3</td>
-          <td>65.8</td>
-        </tr>
-        <tr style="background-color: rgba(117, 209, 215, 0.1);">
-          <td style="text-align: left;"><strong>Gemma-7B-it</strong></td>
-          <td>6.2</td>
-          <td>33.3</td>
-          <td>6.2</td>
-          <td>70.8</td>
-          <td>33.3</td>
-          <td>30.0</td>
-        </tr>
-        <tr style="background-color: rgba(117, 209, 215, 0.1);">
-          <td style="text-align: left;"><strong>Gemma-2-2B-it</strong></td>
-          <td>28.4</td>
-          <td>87.7</td>
-          <td>44.4</td>
-          <td>69.0</td>
-          <td>75.3</td>
-          <td>61.0</td>
-        </tr>
-        <tr style="background-color: rgba(117, 209, 215, 0.1);">
-          <td style="text-align: left;"><strong>Gemma-2-9B-it</strong></td>
-          <td>33.3</td>
-          <td>96.3</td>
-          <td>75.3</td>
-          <td>67.3</td>
-          <td>90.1</td>
-          <td>72.5</td>
-        </tr>
-        <tr style="background-color: rgba(117, 209, 215, 0.1);">
-          <td style="text-align: left;"><strong>chatglm3-6b</strong></td>
+          <td style="text-align: left;"><strong>Qwen2.5-0.5B-Instruct</strong></td>
+          <td>65.4</td>
           <td>21.0</td>
-          <td>80.2</td>
-          <td>37.5</td>
-          <td>58.3</td>
-          <td>44.4</td>
-          <td>48.3</td>
+          <td>25.9</td>
+          <td>69.4</td>
+          <td>14.8</td>
+          <td>39.3</td>
         </tr>
         <tr style="background-color: rgba(117, 209, 215, 0.1);">
           <td style="text-align: left;"><strong>glm-4-9b-chat</strong></td>
-          <td>38.3</td>
           <td>91.4</td>
           <td>72.8</td>
-          <td>79.9</td>
           <td>84.0</td>
+          <td>79.9</td>
+          <td>38.3</td>
           <td>73.3</td>
+        </tr>
+        <tr style="background-color: rgba(117, 209, 215, 0.1);">
+          <td style="text-align: left;"><strong>Gemma-2-9B-it</strong></td>
+          <td>96.3</td>
+          <td>75.3</td>
+          <td>90.1</td>
+          <td>67.3</td>
+          <td>33.3</td>
+          <td>72.5</td>
+        </tr>
+        <tr style="background-color: rgba(117, 209, 215, 0.1);">
+          <td style="text-align: left;"><strong>Yi-6B-Chat</strong></td>
+          <td>93.8</td>
+          <td>48.1</td>
+          <td>75.3</td>
+          <td>85.6</td>
+          <td>26.2</td>
+          <td>65.8</td>
+        </tr>
+        <tr style="background-color: rgba(117, 209, 215, 0.1);">
+          <td style="text-align: left;"><strong>Gemma-2-2B-it</strong></td>
+          <td>87.7</td>
+          <td>44.4</td>
+          <td>75.3</td>
+          <td>69.0</td>
+          <td>28.4</td>
+          <td>61.0</td>
+        </tr>
+        <tr style="background-color: rgba(117, 209, 215, 0.1);">
+          <td style="text-align: left;"><strong>chatglm3-6b</strong></td>
+          <td>80.2</td>
+          <td>37.5</td>
+          <td>44.4</td>
+          <td>58.3</td>
+          <td>21.0</td>
+          <td>48.3</td>
+        </tr>
+        <tr style="background-color: rgba(117, 209, 215, 0.1);">
+          <td style="text-align: left;"><strong>Gemma-7B-it</strong></td>
+          <td>33.3</td>
+          <td>6.2</td>
+          <td>33.3</td>
+          <td>70.8</td>
+          <td>6.2</td>
+          <td>30.0</td>
         </tr>
       </table>  
         </div>
@@ -725,16 +704,30 @@
     <div class="lang-en">
       <h2 class="title is-4">Acknowledgements</h2>
       <p><strong>Data Annotators</strong> Yijie Deng, Siqi Zha, Fenghong An, Hanying Li, Chuang Deng</p>
+      <p><strong>Data Test Engineer</strong> He Zhu, Wen Wang, Junyou Su</p>
       <br>
     </div>
     <!-- 中文版（默认隐藏） -->
     <div class="lang-zh" style="display: none;">
       <h2 class="title is-4">致谢</h2>
       <p><strong>数据标注人员：</strong>邓奕杰，查思齐，安枫泓，李瀚滢，邓闯</p>
+      <p><strong>数据测试工程师：</strong>朱赫，王稳，苏军又</p>
       <br>
     </div>
   </div>
 </div>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <p style="color: red; font-weight: bold;">
+          Note: This content is part of a manuscript under submission. Please do not cite until it is officially published. The arxiv article and dataset along with the code will be launched soon.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- @PAN TODO: bibtex -->
 <!-- <section class="section" id="BibTeX">
